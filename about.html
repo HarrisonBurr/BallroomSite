@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="aboutPageParent">
+
+<head>
+  <meta charset="utf-8">
+  <title>About | UCONN Ballroom</title>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body class="aboutPage clearfix" id="body">
+  <div id="menuContainer">
+    <div class="closeMenu" id="closeMenu">
+      <div id="x1"></div>
+      <div id="x2"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mentors.html">Mentors</a></li>
+        <li><a href="board.html">Board</a></li>
+        <li><a href="#">Competitions</a></li>
+        <li><a href="#">Schedule</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="bodyCont" id="bodyCont">
+    <div class="topBar clearfix">
+      <div for="hamburgerIconCheck" id="hamburgerIcon">
+        <div class="hamburgerIcon">
+          <div class="eachThird"></div>
+          <div class="eachThird"></div>
+          <div class="eachThird"></div>
+        </div>
+      </div>
+      <div class="mainLogo clearfix">
+        <div id="LogoPlaceholder"></div>
+      </div>
+    </div>
+    <div class="pageImage">
+
+    </div>
+    <div class="welcomeMessage">
+      <h1>WHO WE ARE</h1>
+      <p>The UConn Ballroom Dance Club and Team is a student-run organization at the University of Connecticut. Our goal is to promote the experience of ballroom dance for all interested persons. The Club meets once a week on Thursdays from 7-9 for beginner
+        and intermediate group classes. Classes will be held in the Storrs Congregational Church. In our club we teach the six core American ballroom dances: The Waltz, Tango, Foxtrot, Swing, Cha-Cha and Rumba. The team learns all nineteen competitive
+        ballroom dances, in both the American and International styles. <br /><br />The club is instructed by Sara Schilling, with our more advanced team members available to help out. Our team is coached by Sara Schilling and Evgueni Chaoulski. We may
+        also bring in guest instruction from time to time.</p>
+    </div>
+    <footer>
+      <h3>Interested in Joining?</h3>
+      <p>Click <a href="about.html">HERE</a> or Email:<br/>uconnballroom@uconn.edu</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+    var hamburgerIcon = document.getElementById("hamburgerIcon"),
+      xButton = document.getElementById("closeMenu"),
+      menuCont = document.getElementById("menuContainer"),
+      bodyCont = document.getElementById('bodyCont'),
+      docBod = document.getElementById('body');
+
+    window.onload = function() {
+      menuCont.style.transform = "translate(-" + menuCont.offsetWidth + "px, 0)";
+    }
+
+    hamburgerIcon.addEventListener("click", function() {
+      expandMenu()
+    });
+
+    function expandMenu() {
+      menuCont.style.transform = "translate(0px, 0)";
+      menuCont.style.transition = "1s ease";
+      bodyCont.style.transform = "translate(" + menuCont.offsetWidth + "px, 0)";
+      bodyCont.style.transition = "1s ease";
+      docBod.style.overflow = "hidden";
+    }
+
+    function closeMenu() {
+      menuCont.style.transform = "translate(-" + menuCont.offsetWidth + "px, 0)";
+      menuCont.style.transition = "1s ease";
+      bodyCont.style.transform = "translate(0px, 0)";
+      bodyCont.style.transition = "1s ease";
+      docBod.style.overflow = "scroll";
+    }
+
+    xButton.addEventListener("click", function() {
+      closeMenu()
+    });
+  </script>
+
+</body>
+
+</html>
