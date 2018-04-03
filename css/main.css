@@ -1,0 +1,1179 @@
+/*----------------------UNIVERSALS------------------------------*/
+
+*{
+  box-sizing: border-box;
+}
+body, html{
+  padding: 0px;
+  margin: 0px;
+}
+.clearfix{
+  overflow: auto;
+  zoom: 1;
+}
+
+/*----------MOBILE BELOW----------*/
+
+/*Start Mobile Responsive Query*/
+
+  /*Landing Page Mobile*/
+  .landingPageParent #menuContainer{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    top: 100vh;
+    float: left;
+  }
+  .landingPageParent #menuContainer .closeMenu{
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 5vw;
+  }
+  .landingPageParent #menuContainer .closeMenu div{
+    width: 100%;
+    height: 5%;
+    margin-top: 45%;
+    background: linear-gradient(to right, orange, red);
+  }
+  .landingPageParent #menuContainer .closeMenu #x1{
+     transform: rotateZ(45deg);
+     float: left;
+  }
+  .landingPageParent #menuContainer .closeMenu #x2{
+     transform: rotateZ(-45deg);
+  }
+  .landingPageParent #menuContainer ul{
+    list-style: none;
+    padding: 0px;
+    clear: both;
+  }
+  .landingPageParent #menuContainer ul li{
+    border-bottom: 0.25vw solid orange;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  .landingPageParent #menuContainer ul li a{
+    font-size: 10vw;
+    margin-left: 5vw;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+  .landingPageParent .bodyCont{
+    z-index: 2;
+    margin-top: -100vh;
+  }
+  .landingPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .landingPageParent .topBar .hamburgerIcon{
+     width: 9vw;
+     height: 9.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .landingPageParent .topBar .mainLogo{
+    margin-left: 7vw;
+    width: 77vw;
+    float: left;
+  }
+  .landingPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/MobileLogo.png");
+    background-size: contain;
+    height: 12vw;
+    width: 100%;
+  }
+  .landingPageParent .topBar .hamburgerIcon .eachThird{
+    height: 10%;
+    margin-top: 20%;
+    background-color: #969696;
+  }
+  .landingPageParent .dancersPic{
+    width: 100vw;
+    height: 45vw;
+    margin-bottom: 10vw;
+  }
+  .landingPageParent .dancersPic #DancersPlaceholder{
+    margin: 0px auto;
+    background-image: url("../images/Dancers/MobileDancers.png");
+    background-size: contain;
+    height: 45vw;
+    width: 60vw;
+  }
+  .landingPageParent .welcomeMessage, .landingPageParent .recentNews{
+    width: 100vw;
+    margin: 0px auto;
+    height: auto;
+  }
+  .landingPageParent .welcomeMessage h1{
+    text-align: center;
+    font-size: 15vw;
+    margin: 0px auto;
+    color: #969696;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+  }
+  .landingPageParent .welcomeMessage p{
+    width: 80vw;
+    text-align: justify;
+    margin: 0px auto;
+    font-family: Tw Cen MT;
+    color: #8A8A8A;
+    letter-spacing: .25vw;
+    line-height: 1.5em;
+  }
+  .landingPage hr{
+    width: 90vw;
+    height: 0.5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background-color: #d1d1d1;
+    border: none;
+  }
+  .landingPageParent .seeMore{
+    display: none;
+  }
+  .landingPageParent .recentNews{
+     margin-bottom: 5vw;
+  }
+  .landingPageParent .recentNews h1{
+    text-align: center;
+    font-size: 12vw;
+    padding-bottom: 5vw;
+    margin: 0px auto;
+    color: #969696;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+  }
+  .landingPageParent .recentNews span, p, a{
+    width: 80vw;
+    text-align: center;
+    margin: 0px auto;
+    font-family: Tw Cen MT;
+    color: #8A8A8A;
+    letter-spacing: .25vw;
+    line-height: 1.5em;
+  }
+  .landingPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .landingPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 7vw;
+    font-weight: 100;
+  }
+  .landingPageParent footer p, .landingPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  /*End Landing Page*/
+
+  /*About Page Mobile*/
+  .aboutPageParent #menuContainer{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    top: 100vh;
+    float: left;
+  }
+  .aboutPageParent #menuContainer .closeMenu{
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 5vw;
+  }
+  .aboutPageParent #menuContainer .closeMenu div{
+    width: 100%;
+    height: 5%;
+    margin-top: 45%;
+    background: linear-gradient(to right, orange, red);
+  }
+  .aboutPageParent #menuContainer .closeMenu #x1{
+     transform: rotateZ(45deg);
+     float: left;
+  }
+  .aboutPageParent #menuContainer .closeMenu #x2{
+     transform: rotateZ(-45deg);
+  }
+  .aboutPageParent #menuContainer ul{
+    list-style: none;
+    padding: 0px;
+    clear: both;
+  }
+  .aboutPageParent #menuContainer ul li{
+    border-bottom: 0.25vw solid orange;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  .aboutPageParent #menuContainer ul li a{
+    font-size: 10vw;
+    margin-left: 5vw;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+  .aboutPageParent .bodyCont{
+    z-index: 2;
+    margin-top: -100vh;
+  }
+  .aboutPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .aboutPageParent .topBar .hamburgerIcon{
+     width: 9vw;
+     height: 9.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .aboutPageParent .topBar .mainLogo{
+    margin-left: 7vw;
+    width: 77vw;
+    float: left;
+  }
+  .aboutPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/MobileLogo.png");
+    background-size: contain;
+    height: 12vw;
+    width: 100%;
+  }
+  .aboutPageParent .topBar .hamburgerIcon .eachThird{
+    height: 10%;
+    margin-top: 20%;
+    background-color: #969696;
+  }
+  .aboutPageParent .pageImage{
+    width: 100vw;
+    height: 55vw;
+    background-image: url("../images/Group/MobileGroup.png");
+    background-size: cover;
+  }
+  .aboutPageParent .welcomeMessage{
+    width: 100vw;
+    margin: 0px auto;
+    height: auto;
+  }
+  .aboutPageParent .welcomeMessage h1{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 12vw;
+    margin: 0px auto;
+    color: #969696;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+  }
+  .aboutPageParent .welcomeMessage p{
+    width: 80vw;
+    text-align: justify;
+    margin: 0px auto;
+    font-family: Tw Cen MT;
+    color: #8A8A8A;
+    letter-spacing: .25vw;
+    line-height: 1.5em;
+  }
+  .aboutPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .aboutPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 7vw;
+    font-weight: 100;
+  }
+  .aboutPageParent footer p, .aboutPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  /*End About Mobile*/
+
+  /*Mentors Mobile Below*/
+  .mentorsPageParent #menuContainer{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    top: 100vh;
+    float: left;
+  }
+  .mentorsPageParent #menuContainer .closeMenu{
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 5vw;
+  }
+  .mentorsPageParent #menuContainer .closeMenu div{
+    width: 100%;
+    height: 5%;
+    margin-top: 45%;
+    background: linear-gradient(to right, orange, red);
+  }
+  .mentorsPageParent #menuContainer .closeMenu #x1{
+     transform: rotateZ(45deg);
+     float: left;
+  }
+  .mentorsPageParent #menuContainer .closeMenu #x2{
+     transform: rotateZ(-45deg);
+  }
+  .mentorsPageParent #menuContainer ul{
+    list-style: none;
+    padding: 0px;
+    clear: both;
+  }
+  .mentorsPageParent #menuContainer ul li{
+    border-bottom: 0.25vw solid orange;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  .mentorsPageParent #menuContainer ul li a{
+    font-size: 10vw;
+    margin-left: 5vw;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+  .mentorsPageParent .bodyCont{
+    z-index: 2;
+    margin-top: -100vh;
+  }
+  .mentorsPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .mentorsPageParent .topBar .hamburgerIcon{
+     width: 9vw;
+     height: 9.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .mentorsPageParent .topBar .mainLogo{
+    margin-left: 7vw;
+    width: 77vw;
+    float: left;
+  }
+  .mentorsPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/MobileLogo.png");
+    background-size: contain;
+    height: 12vw;
+    width: 100%;
+  }
+  .mentorsPageParent .topBar .hamburgerIcon .eachThird{
+    height: 10%;
+    margin-top: 20%;
+    background-color: #969696;
+  }
+  .mentorsPageParent .pageImage{
+    width: 100vw;
+    height: 55vw;
+    background-image: url("../images/Group/MobileGroup.png");
+    background-size: cover;
+  }
+  .mentorsPageParent .Instructors{
+    width: 100vw;
+    height: auto;
+  }
+  .mentorsPageParent .Instructors div{
+    margin-top: 5vw;
+    width: inherit;
+    color: #969696;
+    font-family: Tw Cen MT;
+  }
+  .mentorsPageParent .Instructors div .image{
+    width: 50vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    background-color: #333;
+    height: 60vw;
+    float: left;
+  }
+  .mentorsPageParent .Instructors div #desc{
+    margin-left: 5vw;
+    width: 90vw;
+    text-align: justify;
+  }
+  .mentorsPageParent .Instructors .JuniorMentors{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    text-align: center;
+  }
+  .mentorsPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .mentorsPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 7vw;
+    font-weight: 100;
+  }
+  .mentorsPageParent footer p, .mentorsPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  /*End Mentors Mobile*/
+
+  /*Board Mobile Below*/
+  .boardPageParent #menuContainer{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    top: 100vh;
+    float: left;
+  }
+  .boardPageParent #menuContainer .closeMenu{
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 5vw;
+  }
+  .boardPageParent #menuContainer .closeMenu div{
+    width: 100%;
+    height: 5%;
+    margin-top: 45%;
+    background: linear-gradient(to right, orange, red);
+  }
+  .boardPageParent #menuContainer .closeMenu #x1{
+     transform: rotateZ(45deg);
+     float: left;
+  }
+  .boardPageParent #menuContainer .closeMenu #x2{
+     transform: rotateZ(-45deg);
+  }
+  .boardPageParent #menuContainer ul{
+    list-style: none;
+    padding: 0px;
+    clear: both;
+  }
+  .boardPageParent #menuContainer ul li{
+    border-bottom: 0.25vw solid orange;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  .boardPageParent #menuContainer ul li a{
+    font-size: 10vw;
+    margin-left: 5vw;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+  .boardPageParent .bodyCont{
+    z-index: 2;
+    margin-top: -100vh;
+  }
+  .boardPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .boardPageParent .topBar .hamburgerIcon{
+     width: 9vw;
+     height: 9.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .boardPageParent .topBar .mainLogo{
+    margin-left: 7vw;
+    width: 77vw;
+    float: left;
+  }
+  .boardPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/MobileLogo.png");
+    background-size: contain;
+    height: 12vw;
+    width: 100%;
+  }
+  .boardPageParent .topBar .hamburgerIcon .eachThird{
+    height: 10%;
+    margin-top: 20%;
+    background-color: #969696;
+  }
+  .boardPageParent .pageImage{
+    width: 100vw;
+    height: 55vw;
+    background-image: url("../images/Group/MobileGroup.png");
+    background-size: cover;
+  }
+  .boardPageParent .Instructors{
+    width: 100vw;
+    height: auto;
+  }
+  .boardPageParent .Instructors div{
+    margin-top: 5vw;
+    width: inherit;
+    color: #969696;
+    font-family: Tw Cen MT;
+  }
+  .boardPageParent .Instructors div .image{
+    width: 50vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    background-color: #333;
+    height: 60vw;
+    float: left;
+  }
+  .boardPageParent .Instructors div #desc{
+    margin-left: 5vw;
+    width: 90vw;
+    text-align: justify;
+  }
+  .boardPageParent .Instructors .AdHoc{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    text-align: center;
+  }
+  .boardPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .boardPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 7vw;
+    font-weight: 100;
+  }
+  .boardPageParent footer p, .boardPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  /*End Board Mobile*/
+
+/*End Mobile Responsive Query*/
+
+/*----------TABLET BELOW----------*/
+
+/*Start Tablet Responsive Query*/
+
+@media (-webkit-min-width: 750px) {
+
+  /*Landing Page Tablet*/
+
+  .landingPageParent .topBar .hamburgerIcon{
+    display: none;
+  }
+  .landingPageParent .topBar .mainLogo{
+    margin-left: 18.25vw;
+    margin-top: -2.25vw;
+    width: 63vw;
+  }
+  .landingPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/TabletLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+  .landingPageParent .topBar .mainLogo:after{
+    content: "No Partner? No Experience? No Problem!";
+    font-size: 2.5vw;
+    text-align: center;
+    margin-left: 12vw;
+    font-family: Tw Cen MT;
+  }
+  .landingPageParent .dancersPic{
+    margin-left: -1vw;
+    height: 45vw;
+    margin-top: 0vw;
+  }
+  .landingPageParent .dancersPic #DancersPlaceholder{
+    background-image: url("../images/Dancers/TabletDancers.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 50vw;
+  }
+  .landingPageParent .seeMore{
+     display: block;
+     width: 20vw;
+     position: relative;
+     top: -15vw;
+     outline: 0.45vw solid black;
+     transition: 0.25s ease;
+     margin: 0px auto;
+   }
+  .landingPageParent #menuContainer{
+     width: 100vw;
+     height: 100vh;
+   }
+  .landingPageParent #menuContainer .closeMenu{
+     width: 5vw;
+     height: 5vw;
+     float: right;
+     margin-right: 2vw;
+     margin-top: 2vw;
+   }
+  .landingPageParent #menuContainer .closeMenu div{
+     width: 100%;
+     height: 10%;
+     margin-top: 45%;
+     background-color: #dadada;
+   }
+  .landingPageParent #menuContainer ul{
+     list-style: none;
+     clear: both;
+     position: relative;
+     top: 2vw;
+   }
+  .landingPageParent #menuContainer ul li{
+     border-bottom: 0.25vw solid #dadada;
+     padding-top: 3vw;
+     padding-bottom: 3vw;
+   }
+  .landingPageParent #menuContainer ul li:nth-child(1){
+     padding-top: 0px;
+
+   }
+  .landingPageParent #menuContainer ul li a{
+     font-size: 3vw;
+     font-family: Tw Cen MT;
+     font-weight: 100;
+     color: #dadada;
+     text-decoration: none;
+   }
+   .landingPageParent .seeMore{
+     clear: both;
+   }
+  .landingPageParent .seeMore:hover{
+     outline: 0.45vw solid black;
+     transition: 0.25s ease;
+     outline-offset: 1vw;
+     cursor: pointer;
+   }
+  .landingPageParent .seeMore .content{
+     color: black;
+     padding: 2vw 1vw 2vw 1vw;
+     text-align: center;
+     background-color: transparent;
+     font-family: Tw Cen MT;
+     font-size: 3vw;
+     margin: 0px auto;
+  }
+  .landingPageParent .welcomeMessage, .landingPageParent hr, .landingPageParent .recentNews, .landingPageParent footer{
+    display: none;
+  }
+  /*End Landing Page*/
+
+  /*About Page Tablet*/
+  .aboutPageParent #menuContainer{
+     width: 100vw;
+     height: 100vh;
+   }
+  .aboutPageParent #menuContainer .closeMenu{
+     width: 5vw;
+     height: 5vw;
+     float: right;
+     margin-right: 2vw;
+     margin-top: 2vw;
+   }
+  .aboutPageParent #menuContainer .closeMenu div{
+     width: 100%;
+     height: 10%;
+     margin-top: 45%;
+     background-color: #dadada;
+   }
+  .aboutPageParent #menuContainer ul{
+     list-style: none;
+     clear: both;
+     position: relative;
+     top: 2vw;
+   }
+  .aboutPageParent #menuContainer ul li{
+     border-bottom: 0.25vw solid #dadada;
+     padding-top: 3vw;
+     padding-bottom: 3vw;
+   }
+  .aboutPageParent #menuContainer ul li:nth-child(1){
+     padding-top: 0px;
+
+   }
+  .aboutPageParent #menuContainer ul li a{
+     font-size: 3vw;
+     font-family: Tw Cen MT;
+     font-weight: 100;
+     color: #dadada;
+     text-decoration: none;
+   }
+  .aboutPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .aboutPageParent .topBar .hamburgerIcon{
+     width: 5vw;
+     height: 5.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .aboutPageParent .topBar .mainLogo{
+    margin-left: 20vw;
+    width: 50vw;
+    float: left;
+  }
+  .aboutPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/TabletLogo.png");
+    background-size: contain;
+    height: 8vw;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .aboutPageParent .welcomeMessage{
+    width: 100vw;
+    margin: 0px auto;
+    height: auto;
+  }
+  .aboutPageParent .welcomeMessage h1{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 8vw;
+    margin: 0px auto;
+    color: #969696;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+  }
+  .aboutPageParent .welcomeMessage p{
+    width: 80vw;
+    text-align: justify;
+    margin: 0px auto;
+    font-family: Tw Cen MT;
+    font-size: 3vw;
+    color: #8A8A8A;
+    letter-spacing: .25vw;
+    line-height: 1.5em;
+  }
+  .aboutPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .aboutPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 4vw;
+    font-weight: 100;
+  }
+  .aboutPageParent footer p, .aboutPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  /*End About Tablet*/
+
+  /*Mentors Tablet Below*/
+  .mentorsPageParent #menuContainer{
+     width: 100vw;
+     height: 100vh;
+   }
+  .mentorsPageParent #menuContainer .closeMenu{
+     width: 5vw;
+     height: 5vw;
+     float: right;
+     margin-right: 2vw;
+     margin-top: 2vw;
+   }
+  .mentorsPageParent #menuContainer .closeMenu div{
+     width: 100%;
+     height: 10%;
+     margin-top: 45%;
+     background-color: #dadada;
+   }
+  .mentorsPageParent #menuContainer ul{
+     list-style: none;
+     clear: both;
+     position: relative;
+     top: 2vw;
+   }
+  .mentorsPageParent #menuContainer ul li{
+     border-bottom: 0.25vw solid #dadada;
+     padding-top: 3vw;
+     padding-bottom: 3vw;
+   }
+  .mentorsPageParent #menuContainer ul li:nth-child(1){
+     padding-top: 0px;
+
+   }
+  .mentorsPageParent #menuContainer ul li a{
+     font-size: 3vw;
+     font-family: Tw Cen MT;
+     font-weight: 100;
+     color: #dadada;
+     text-decoration: none;
+   }
+  .mentorsPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .mentorsPageParent .topBar .hamburgerIcon{
+     width: 5vw;
+     height: 5.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .mentorsPageParent .topBar .mainLogo{
+    margin-left: 20vw;
+    width: 50vw;
+    float: left;
+  }
+  .mentorsPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/TabletLogo.png");
+    background-size: contain;
+    height: 8vw;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .mentorsPageParent .mentorsPage .bodyCont .pageImage{
+    width: 100vw;
+    height: 55vw;
+    background-image: url("../images/Group/MentorsGroup.png");
+    background-size: cover;
+  }
+  .mentorsPageParent .Instructors{
+    width: 100vw;
+    height: auto;
+  }
+  .mentorsPageParent .Instructors div{
+    margin-top: 5vw;
+    width: inherit;
+    color: #969696;
+    font-family: Tw Cen MT;
+  }
+  .mentorsPageParent .Instructors div .image{
+    width: 25vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    background-color: #333;
+    height: 30vw;
+    float: left;
+  }
+  .mentorsPageParent .Instructors div #desc{
+    margin-left: 5vw;
+    width: 90vw;
+    font-size: 2vw;
+    text-align: justify;
+  }
+  .mentorsPageParent .Instructors .JuniorMentors{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 4vw;
+    margin-bottom: -5vw;
+    text-align: center;
+  }
+  .mentorsPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .mentorsPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 4vw;
+    font-weight: 100;
+  }
+  .mentorsPageParent footer p, .mentorsPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  /*End Mentors Tablet*/
+
+  /*Board Tablet Below*/
+  .boardPageParent #menuContainer{
+     width: 100vw;
+     height: 100vh;
+   }
+  .boardPageParent #menuContainer .closeMenu{
+     width: 5vw;
+     height: 5vw;
+     float: right;
+     margin-right: 2vw;
+     margin-top: 2vw;
+   }
+  .boardPageParent #menuContainer .closeMenu div{
+     width: 100%;
+     height: 10%;
+     margin-top: 45%;
+     background-color: #dadada;
+   }
+  .boardPageParent #menuContainer ul{
+     list-style: none;
+     clear: both;
+     position: relative;
+     top: 2vw;
+   }
+  .boardPageParent #menuContainer ul li{
+     border-bottom: 0.25vw solid #dadada;
+     padding-top: 3vw;
+     padding-bottom: 3vw;
+   }
+  .boardPageParent #menuContainer ul li:nth-child(1){
+     padding-top: 0px;
+
+   }
+  .boardPageParent #menuContainer ul li a{
+     font-size: 3vw;
+     font-family: Tw Cen MT;
+     font-weight: 100;
+     color: #dadada;
+     text-decoration: none;
+   }
+  .boardPageParent .topBar{
+    clear: both;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+  .boardPageParent .topBar .hamburgerIcon{
+     width: 5vw;
+     height: 5.5vw;
+     margin-top: 1vw;
+     margin-left: 3.25vw;
+     float: left;
+  }
+  .boardPageParent .topBar .mainLogo{
+    margin-left: 20vw;
+    width: 50vw;
+    float: left;
+  }
+  .boardPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/TabletLogo.png");
+    background-size: contain;
+    height: 8vw;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .boardPageParent .bodyCont .pageImage{
+    width: 100vw;
+    height: 55vw;
+    background-image: url("../images/Group/BoardGroup.png");
+    background-size: cover;
+  }
+  .boardPageParent .Instructors{
+    width: 100vw;
+    height: auto;
+  }
+  .boardPageParent .Instructors div{
+    margin-top: 5vw;
+    width: inherit;
+    color: #969696;
+    font-family: Tw Cen MT;
+  }
+  .boardPageParent .Instructors div .image{
+    width: 25vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    background-color: #333;
+    height: 30vw;
+    float: left;
+  }
+  .boardPageParent .Instructors div #desc{
+    margin-left: 5vw;
+    width: 90vw;
+    font-size: 2vw;
+    text-align: justify;
+  }
+  .boardPageParent .Instructors .AdHoc{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 4vw;
+    margin-bottom: -5vw;
+    text-align: center;
+  }
+  .boardPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .boardPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 4vw;
+    font-weight: 100;
+  }
+  .boardPageParent footer p, .mentorsPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+
+  /*End Board Tablet*/
+}
+
+/*End Tablet Responsive Query*/
+
+/*----------DESKTOP BELOW----------*/
+
+/*Start Desktop Responsive Query*/
+@media (-webkit-min-width: 1170px){
+  /*Landing Page Desktop*/
+  .landingPageParent .topBar .mainLogo #LogoPlaceholder{
+    background-image: url("../images/Logo/TabletLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+  .landingPageParent .topBar .mainLogo:after{
+    content: "";
+  }
+  .landingPageParent .dancersPic{
+    margin-left: -.25vw;
+    height: 45vw;
+    margin-top: -7.5vw;
+    margin-bottom: 0px;
+  }
+  .landingPageParent .dancersPic #DancersPlaceholder{
+    background-image: url("../images/Dancers/DesktopDancers.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 40vw;
+  }
+  .landingPageParent .seeMore{
+     display: block;
+     width: 10vw;
+     position: relative;
+     top: -18vw;
+     outline: 0.25vw solid black;
+     font-size: 0.1vw;
+     transition: 0.25s ease;
+     margin: 0px auto;
+   }
+   .landingPageParent .seeMore .content{
+     font-size: 1.25vw;
+     font-family: Century Gothic;
+     font-weight: 600;
+   }
+   .landingPageParent .seeMore:hover{
+     outline-offset: 0.5vw;
+     outline: 0.25vw solid black;
+   }
+  /*End Landing Desktop*/
+  /*About Page Desktop*/
+  .aboutPageParent body{
+    background-image: url("../images/Desktop/UCONNBallroomAbout.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /*End About Desktop*/
+  /*Mentors Desktop Below*/
+  .mentorsPageParent body{
+    background-image: url("../images/Desktop/UCONNBallroomMentors.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /*End Mentors Desktop*/
+  /*Board Desktop Below*/
+  .boardPageParent body{
+    background-image: url("../images/Desktop/UCONNBallroomBoard.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /*End Board Desktop*/
+}
+/*End Desktop Responsive Query*/
+
+/*----------END STYLESHEET----------*/
+
+
+/*--------------WEBSITE DEV: HARRISON BURR--------------*/
+/*---------------HARRISON.BURR@UCONN.EDU----------------*/
+
+
+/*
+
+------NOTES TO SELF------
+
+Make entire <li></li> selectable by wrapping in
+<a></a>
+
+Still need to fix desktop layout. Tablet layouts
+are all set.
+
+*/
