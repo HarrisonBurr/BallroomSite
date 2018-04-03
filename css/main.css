@@ -608,7 +608,7 @@ body, html{
 
 /*Start Tablet Responsive Query*/
 
-@media (-webkit-min-width: 750px) {
+@media (min-width: 750px) {
 
   /*Landing Page Tablet*/
 
@@ -1091,8 +1091,11 @@ body, html{
 /*----------DESKTOP BELOW----------*/
 
 /*Start Desktop Responsive Query*/
-@media (-webkit-min-width: 1170px){
+@media (min-width: 1170px){
   /*Landing Page Desktop*/
+  .landingPageParent body{
+    overflow: hidden;
+  }
   .landingPageParent .topBar .mainLogo #LogoPlaceholder{
     background-image: url("../images/Logo/TabletLogo.png");
     background-repeat: no-repeat;
@@ -1134,26 +1137,276 @@ body, html{
      outline-offset: 0.5vw;
      outline: 0.25vw solid black;
    }
+  .landingPageParent #menuContainer{
+      width: 100vw;
+      height: auto;
+    }
+  .landingPageParent #menuContainer .closeMenu{
+      width: 2vw;
+      height: 2vw;
+      float: right;
+      margin-right: 1vw;
+      margin-top: 1vw;
+    }
+  .landingPageParent #menuContainer .closeMenu div{
+      width: 100%;
+      height: 10%;
+      margin-top: 45%;
+      background-color: #dadada;
+    }
+  .landingPageParent #menuContainer ul{
+      list-style: none;
+      clear: both;
+      position: relative;
+      top: 2vw;
+    }
+   .landingPageParent #menuContainer ul li{
+      border-bottom: 0.25vw solid #dadada;
+      padding-top: 1.5vw;
+      padding-bottom: 1.5vw;
+    }
+   .landingPageParent #menuContainer ul li:nth-child(1){
+      padding-top: 0px;
+
+    }
+   .landingPageParent #menuContainer ul li a{
+      font-size: 3vw;
+      font-family: Tw Cen MT;
+      font-weight: 100;
+      color: #dadada;
+      text-decoration: none;
+    }
+    .landingPageParent .seeMore{
+      clear: both;
+    }
   /*End Landing Desktop*/
   /*About Page Desktop*/
-  .aboutPageParent body{
-    background-image: url("../images/Desktop/UCONNBallroomAbout.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+  .aboutPageParent #menuContainer{
+      width: 100vw;
+    }
+  .aboutPageParent #menuContainer .closeMenu{
+      width: 2vw;
+      height: 2vw;
+      float: right;
+      margin-right: 1vw;
+      margin-top: 1vw;
+    }
+  .aboutPageParent #menuContainer .closeMenu div{
+      width: 100%;
+      height: 10%;
+      margin-top: 45%;
+      background-color: #dadada;
+    }
+  .aboutPageParent #menuContainer ul{
+      list-style: none;
+      clear: both;
+      position: relative;
+      top: 2vw;
+    }
+   .landingPageParent #menuContainer ul li{
+      border-bottom: 0.25vw solid #dadada;
+      padding-top: 1.5vw;
+      padding-bottom: 1.5vw;
+    }
+   .landingPageParent #menuContainer ul li:nth-child(1){
+      padding-top: 0px;
+
+    }
+   .landingPageParent #menuContainer ul li a{
+      font-size: 2vw;
+      font-family: Tw Cen MT;
+      font-weight: 100;
+      color: #dadada;
+      text-decoration: none;
+    }
+  .landingPageParent .seeMore{
+      clear: both;
+    }
+  .aboutPageParent .bodyCont{
+    position: relative;
+    top: 0vw;
+    left: 0px;
+  }
+  .aboutPageParent .welcomeMessage{
+    width: 100vw;
+    margin: 0px auto;
+    height: auto;
+  }
+  .aboutPageParent .welcomeMessage h1{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+    margin: 0px auto;
+    color: #969696;
+    font-family: Tw Cen MT;
+    font-weight: 100;
+  }
+  .aboutPageParent .welcomeMessage p{
+    width: 80vw;
+    text-align: justify;
+    margin: 0px auto;
+    font-family: Tw Cen MT;
+    font-size: 2vw;
+    color: #8A8A8A;
+    letter-spacing: .25vw;
+    line-height: 1.5em;
+  }
+  .aboutPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .aboutPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+  }
+  .aboutPageParent footer p, .aboutPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
   }
   /*End About Desktop*/
   /*Mentors Desktop Below*/
   .mentorsPageParent body{
-    background-image: url("../images/Desktop/UCONNBallroomMentors.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  .mentorsPageParent .Instructors{
+    width: 90vw;
+    margin: 0px auto;
+    overflow-x: hidden;
+  }
+  .mentorsPageParent .Instructors div{
+    display: inline-block;
+    width: 40%;
+    margin: 0px;
+    margin-top: 3vw;
+    padding: 0px;
+  }
+  .mentorsPageParent .Instructors .JuniorMentors{
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 0vw;
+  }
+  .mentorsPageParent .Instructors div:nth-child(even){
+    margin-right: 4vw;
+    float: right;
+  }
+  .mentorsPageParent .Instructors div:nth-child(odd){
+    margin-left: 4vw;
+    float: left;
+  }
+  .mentorsPageParent .Instructors div .image{
+    width: 75%;
+    padding-left: 3vw;
+    margin-bottom: 3vw;
+  }
+  .mentorsPageParent .Instructors div #desc{
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    font-size:1.5vw;
+    text-align: justify;
+  }
+  .mentorsPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .mentorsPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+  }
+  .mentorsPageParent footer p, .mentorsPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
   }
   /*End Mentors Desktop*/
+
   /*Board Desktop Below*/
   .boardPageParent body{
-    background-image: url("../images/Desktop/UCONNBallroomBoard.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  .boardPageParent .Instructors{
+    width: 90vw;
+    margin: 0px auto;
+    overflow-x: hidden;
+  }
+  .boardPageParent .Instructors div{
+    display: inline-block;
+    width: 40%;
+    margin: 0px;
+    margin-top: 3vw;
+    padding: 0px;
+  }
+  .boardPageParent .Instructors .AdHoc{
+    clear: both;
+    text-align: center;
+    margin-left: 0vw;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 0vw;
+  }
+  .boardPageParent .Instructors div:nth-child(even){
+    margin-right: 4vw;
+    float: right;
+  }
+  .boardPageParent .Instructors div:nth-child(odd){
+    margin-left: 4vw;
+    float: left;
+  }
+  .boardPageParent .Instructors div .image{
+    width: 75%;
+    padding-left: 3vw;
+    margin-bottom: 3vw;
+  }
+  .boardPageParent .Instructors div #desc{
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    font-size:1.5vw;
+    text-align: justify;
+  }
+  .boardPageParent footer{
+    background: linear-gradient(to right, #008DFF, #385799);
+  }
+  .boardPageParent footer h3{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+  }
+  .boardPageParent footer p, .boardPageParent footer a{
+    font-family: Century Gothic;
+    text-align: center;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
   }
   /*End Board Desktop*/
 }
@@ -1164,16 +1417,3 @@ body, html{
 
 /*--------------WEBSITE DEV: HARRISON BURR--------------*/
 /*---------------HARRISON.BURR@UCONN.EDU----------------*/
-
-
-/*
-
-------NOTES TO SELF------
-
-Make entire <li></li> selectable by wrapping in
-<a></a>
-
-Still need to fix desktop layout. Tablet layouts
-are all set.
-
-*/
